@@ -4,5 +4,5 @@ const controller = new Controller()
 
 export const inboxRoutes = Router()
 
-inboxRoutes.post('/getInboxForUser', controller.sendError(400, "no data found"))
+inboxRoutes.post('/getInboxForUser', controller.sendMessage(400, "no data found"))
 

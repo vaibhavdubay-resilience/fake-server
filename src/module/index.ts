@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { inboxRoutes } from "./routes/inbox.route";
-import { eddRoutes } from "./routes/edd.route";
+import { eddRoutes, inboxRoutes, paymentRoutes } from "./routes";
 
 export const mainRoutes = Router();
 
 mainRoutes.use("/message", inboxRoutes);
 mainRoutes.use("/edd", eddRoutes);
+mainRoutes.use("/payment", paymentRoutes);
